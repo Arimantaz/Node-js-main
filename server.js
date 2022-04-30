@@ -9,14 +9,14 @@
 
 const express = require('express');
 const app = express();
-
-app.listen(5500, () => {
-    console.log('serveris paleistas!');
+let count = 0;
+app.listen(9000, () => {
+    console.log(`serveris paleistas. Užklausų skaičius: ${count}`);
 });
 
-app.get('/time', (request, response) => {
-  const date = new Date();
-  const dateString = date.toLocaleDateString();
-  const timeString = date.toLocaleTimeString();
-  response.send(`${dateString} ${timeString}`);
-});
+app.get('/', (request, response) => {
+  count++;
+  response.send(`Užklausų skaičius: ${count}`);
+ });
+
+ 

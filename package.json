@@ -27,6 +27,7 @@
   "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "counter": "^0.1.1",
     "express": "^4.18.0",
     "mersenne-twister": "^1.0.1",
     "moment": "^2.15.2"
