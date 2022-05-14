@@ -5,7 +5,7 @@
   "main": "src/casual.js",
   "scripts": {
     "test": "make test",
-    "start": "node server.js"
+    "start": "node knygos.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "author": "Egor Gumenyuk <boo1ean0807@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "counter": "^0.1.1",
     "express": "^4.18.0",
     "mersenne-twister": "^1.0.1",
